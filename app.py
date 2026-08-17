@@ -1,10 +1,8 @@
 import streamlit as st
-import cv2
 import numpy as np
+from PIL import Image
 import mediapipe as mp
 from mediapipe.tasks import python
-from mediapipe.tasks.python import vision
-import os
 
 st.set_page_config(
     page_title="Magic Specs VTO",
@@ -142,4 +140,3 @@ if person_file and glasses_file:
             st.image(proc_rgb, caption="Virtual Spectacles Output", use_container_width=True)
         else:
             st.image(orig_rgb, caption="Original Input Image", use_container_width=True)
-            
