@@ -3,6 +3,8 @@ import cv2
 import numpy as np
 import streamlit as st
 import mediapipe as mp
+from mediapipe.tasks import python
+from mediapipe.tasks.python import vision
 st.set_page_config(
     page_title="Magic Specs VTO",
     page_icon="🕶️",
