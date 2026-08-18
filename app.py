@@ -1,10 +1,8 @@
+import os
 import cv2
-import streamlit as st
 import numpy as np
-from PIL import Image
+import streamlit as st
 import mediapipe as mp
-from mediapipe.tasks import python
-
 st.set_page_config(
     page_title="Magic Specs VTO",
     page_icon="🕶️",
